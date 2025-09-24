@@ -1,0 +1,13 @@
+Month Class 
+
+Student Name: Elima Zholdubaeva
+Course: CSC122 002
+Instructor: Jason James
+Assignment: Month Class lab
+
+
+
+This program implements a Month class that represents a single month of the year. 
+The class allows the month to be stored as an integer, abbreviation, or full name, 
+and provides methods for input, output, comparison, and advancing to the next month.
+

@@ -1,0 +1,23 @@
+1. Yes. I included a private method to convert names/abbreviations into numbers. 
+This supports the translation between representations but does not need to be exposed to the user. 
+
+2. This is possible with function overloading. In C++, methods with the same name can exist as long as their parameter lists differ. 
+The compiler chooses the right one based on the arguments passed.
+
+3. The advance method always returns a Month object. 
+Once the caller has the object, they can choose how to display it (number, short name, or full name).
+
+4. No, it does not prompt. The driver program should handle prompts so the class remains flexible and can be reused in different situations.
+
+5. No. It only prints the requested month form (number, short name, or full name). Adding extra formatting like newlines would reduce flexibility.
+
+6. I created separate output methods (output_full, output_short, output_number) so the programmer can choose explicitly. 
+
+7. It checks the first character. If it’s a digit, it treats the input as a number.
+ Otherwise, it assumes a word and checks whether it matches a full name or a 3-letter abbreviation.
+
+8. It allows multiple tests in one run, which is more convenient for both the programmer and user.
+
+9.Some tests are hard-coded for consistency, but the user can also enter their own month input.
+
+10. The built-in tests are ordered, but user input is free choice. A mix of both is most useful since it guarantees coverage while also letting the programmer test freely.
